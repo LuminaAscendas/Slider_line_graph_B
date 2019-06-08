@@ -12853,7 +12853,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 		var i, handleCount,
 			options = this.options,
 			existingHandles = this.element.find( ".ui-slider-handle" ).addClass( "ui-state-default ui-corner-all" ),
-			handle = "<div id='ui_handler' role='slider' class='ui-slider-handle ui-state-default ui-corner-all' aria-valuemin='0' aria-valuemax='100' aria-label='1960' title='year'></div>",
+			handle = "<div id='ui_handler' role='slider' class='ui-slider-handle ui-state-default ui-corner-all' aria-valuemin='0' aria-valuemax='100' aria-label='The global ecological footprint over time.' title='year'></div>",
 			handles = [];
 
 		handleCount = ( options.values && options.values.length ) || 1;

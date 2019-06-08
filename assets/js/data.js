@@ -11,5 +11,12 @@ var data = [{
         'Human resource consumption continued to exceed Earth’s estimated carrying capacity through the 1990s. We cannot exceed Earth’s carrying capacity indefinitely.',
         'In the first decade of the 2000s, human consumption rate increased, with a brief reduction associated with the 2008 economic downturn.'
         ],
-	"year":['1960','1970','1980','1990','2000','2010']
+	"year":[
+		'The global ecological footprint over time.',
+        'Population growth and increased affluence increases the amount of resource consumed by humans.',
+        'With continued resource consumption, humans approached Earth’s estimated carrying capacity by 1980.',
+        'While resource consumption slowed in the 1980s, human use of resources exceeded Earth’s estimated carrying capacity.',
+        'Human resource consumption continued to exceed Earth’s estimated carrying capacity through the 1990s. We cannot exceed Earth’s carrying capacity indefinitely.',
+        'In the first decade of the 2000s, human consumption rate increased, with a brief reduction associated with the 2008 economic downturn.'
+		]
     }];
