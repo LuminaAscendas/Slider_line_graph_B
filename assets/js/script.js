@@ -211,6 +211,7 @@ String.prototype.replaceAt=function(index, character) {
             var dec = 100-decimalFirstVal;
             // $('.direction').hide();
             // $('.directionText').hide();
+			$('#heading_text').html('');
             $('#heading_text').html(data[0].description[roundVal-2]); 
             $('#heading_text').attr('aria-label',data[0].description[roundVal-2]); 
             $('.ui-slider-handle').attr('aria-label',data[0].year[roundVal-1]); 
