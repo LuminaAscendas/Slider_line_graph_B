@@ -441,7 +441,8 @@ span{
     width: 100%;
     /* min-height: 77px; */
     /* opacity: 0; */
-    font-family: "SourceSansPro-Bold";
+    font-family: "SourceSansPro-Regular";
+	font-weight:normal;
     font-size: 14px;
     /* text-align: center; */
     display: none;
