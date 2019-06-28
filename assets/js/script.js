@@ -22,8 +22,10 @@ $(document).ready(function(){
 		$('#whole_container').attr('role','application');
 	}*/
 //})  */
-	
-	
+	var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if(isSafari){
+	   $('#heading_text').attr('role','text')
+	}
 $('#begin_btn').off('click').on('click',function(){
 	begin_entered=true;
 	$('#btn_container').fadeIn(1000);
@@ -103,13 +105,20 @@ var slider = $("#slider").slider({
 			  $('#heading_text').css('visibility','visible');
 			  $('#heading_text').attr('tabindex','0');
 		  }
-		  setTimeout(function(){
-			  $('#ui_handler').focus();
-		  },100)
-           $('#ui_handler').off('click').on('click',function(){
-              console.log('123')  
-            });
-            $('#ui_handler').trigger('click')
+          
+          var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+          if(isSafari){
+               $('#ui_handler').blur();
+               $('#ui_handler').off('click').on('click',function(){
+                    $('#text_container').focus();
+                    setTimeout(function(){
+                        $('#ui_handler').focus();
+                    },10)
+                });
+              setTimeout(function(){
+                $('#ui_handler').trigger('click')
+              },20)
+          }
 //          
 //          $('.imgC').off('click').on('click',function(){
 //              //alert('123')  
@@ -119,12 +128,7 @@ var slider = $("#slider").slider({
 //          setTimeout(function(){
 //            $('#ui_handler').trigger('click')//.focus();
 //          },100)
-          var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-          if(isSafari){
-              simulateMouseClick(document.querySelector("#ui_handler"));
-                //alert('this is safari');
-              //  $('#ui_handler').attr('aria-live','assertive');
-            }
+          
           
 //           var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 //            if(iOS){
